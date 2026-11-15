@@ -1,109 +1,55 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-theme="light">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Bin Xiang 滨湘 · Carta · Menu · 菜单</title>
-<meta name="description" content="Carta digital de Bin Xiang: cocina china familiar con más de 23 años en Antonio Varas 67, Providencia. Español · English · Português · 中文.">
+<title>Bin Xiang 宾香 · Carta · Menu · 菜单</title>
+<meta name="description" content="Carta digital de Bin Xiang: cocina china familiar con más de 23 años en Antonio Varas 67, Providencia. Menú de comida y carta de tragos. Español · English · Português · 中文.">
 <meta name="theme-color" content="#1A1613">
-<meta property="og:title" content="Bin Xiang 滨湘 · Carta digital">
+<meta property="og:title" content="Bin Xiang 宾香 · Carta digital">
 <meta property="og:description" content="Cocina china familiar · 23+ años en Antonio Varas 67, Providencia · ES / EN / PT / 中文">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://tianzote.github.io/binxiang-carta/arrozchinovn.png">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='31' fill='%238C1D2B'/%3E%3Ctext x='32' y='44' font-size='34' text-anchor='middle' fill='%23EFE7D8' font-family='serif' font-weight='700'%3E滨%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='31' fill='%238C1D2B'/%3E%3Ctext x='32' y='44' font-size='34' text-anchor='middle' fill='%23EFE7D8' font-family='serif' font-weight='700'%3E宾%3C/text%3E%3C/svg%3E">
+<script>(function(){var t;try{t=localStorage.getItem("bx_theme")}catch(e){}document.documentElement.setAttribute("data-theme",t==="dark"||t==="light"?t:"light")})();</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@700;900&family=Noto+Serif:ital,wght@0,700;1,600&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-  :root{
-    --red:#8C1D2B; --red-dark:#5E1420; --ink:#1A1613; --gold:#B8963E;
-    --gold-light:#D8C48A; --cream:#EFE7D8; --paper:#F7F2E7; --jade:#2F5548; --mut:#5d564c;
-    --head-h:104px;
-  }
-  *{box-sizing:border-box;margin:0;padding:0;}
-  html,body{background:var(--ink);}
-  body{font-family:'Noto Sans','Noto Sans SC',-apple-system,'Segoe UI',Roboto,'PingFang SC',sans-serif;color:var(--ink);-webkit-font-smoothing:antialiased;-webkit-tap-highlight-color:transparent;}
-  button{font-family:inherit;}
-  .serif{font-family:'Noto Serif SC','Noto Serif',Georgia,'Songti SC',serif;}
-  .app{max-width:480px;margin:0 auto;background:var(--paper);min-height:100vh;min-height:100svh;position:relative;box-shadow:0 0 60px rgba(0,0,0,.5);}
+  /* ---------- Tema claro / oscuro ---------- */
+  :root{--red:#8C1D2B;--red-dark:#5E1420;--ink:#1A1613;--gold:#B8963E;--gold-light:#E2C98A;--head-h:104px;
+    --bg:#F7F2E7;--card:#FFFDF8;--txt:#1A1613;--mut:#5d564c;--head:#8C1D2B;--price:#5E1420;--sub:#2F5548;
+    --line:rgba(140,29,43,.22);--edge:#DCCDA8;--pill-t:#5E1420;--input:#fff;--chip:#F3ECDC;
+    --h-bg:#FBEFC9;--h-b:#D9B45A;--h-t:#7a5a1c;--h-s:#5a3f10;
+    --hero-a:#FFFDF8;--hero-b:#EFE4CC;--hero-t:#1A1613;--hero-mut:#5d564c;--hero-acc:#8C1D2B;--hero-edge:#CDB984}
+  html[data-theme="dark"]{--bg:#14100e;--card:#211a16;--txt:#F3EBDD;--mut:#BBAE9F;--head:#E2C98A;--price:#E2C98A;--sub:#9FCDBB;
+    --line:#3d3028;--edge:#3d3028;--pill-t:#F3EBDD;--input:#211a16;--chip:#2b211c;
+    --h-bg:#33260c;--h-b:#7a5a1c;--h-t:#E8C877;--h-s:#FBE7B0;
+    --hero-a:#5E1420;--hero-b:#1A1613;--hero-t:#EFE7D8;--hero-mut:rgba(239,231,216,.78);--hero-acc:#E2C98A;--hero-edge:rgba(226,201,138,.45)}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{background:var(--ink)}
+  body{font-family:'Noto Sans','Noto Sans SC',-apple-system,'Segoe UI',Roboto,'PingFang SC',sans-serif;color:var(--txt);-webkit-font-smoothing:antialiased;-webkit-tap-highlight-color:transparent}
+  button{font-family:inherit}
 
-  /* ---------- Portada (elige idioma) ---------- */
-  .hero{min-height:100vh;min-height:100svh;display:flex;flex-direction:column;justify-content:center;background:radial-gradient(circle at 50% 0%, var(--red-dark) 0%, var(--ink) 70%);color:var(--cream);padding:48px 24px;text-align:center;position:relative;overflow:hidden;}
-  .hero::before{content:"";position:absolute;inset:10px;border:1px solid rgba(216,196,138,.35);pointer-events:none;}
-  .eyebrow{font-size:11.5px;letter-spacing:.26em;text-transform:uppercase;color:var(--gold-light);margin-bottom:14px;}
-  .hero h1{font-family:'Noto Serif SC','Noto Serif',Georgia,serif;font-weight:900;font-size:44px;line-height:1.1;margin-bottom:6px;}
-  .hero .sub{font-family:'Noto Serif','Noto Serif SC',Georgia,serif;font-style:italic;font-weight:600;font-size:15px;color:var(--gold-light);margin-bottom:22px;}
-  .hero .since{font-size:13px;color:rgba(239,231,216,.75);margin-bottom:30px;line-height:1.6;}
-  .hero .hint{font-size:14px;font-weight:600;color:var(--cream);margin-bottom:16px;line-height:1.5;}
-  .lang-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;max-width:360px;width:100%;margin:0 auto;}
-  .seal{aspect-ratio:1;border-radius:50%;background:linear-gradient(155deg,var(--red) 0%,var(--red-dark) 100%);border:2px solid var(--gold-light);display:flex;flex-direction:column;align-items:center;justify-content:center;cursor:pointer;transition:transform .15s ease, box-shadow .15s ease;box-shadow:0 4px 14px rgba(0,0,0,.35);color:inherit;}
-  .seal:active{transform:scale(.95);}
-  .seal:focus-visible{outline:3px solid var(--gold-light);outline-offset:3px;}
-  .seal.suggested{box-shadow:0 0 0 4px rgba(216,196,138,.45),0 4px 14px rgba(0,0,0,.35);}
-  .seal .glyph{font-family:'Noto Serif SC','Noto Serif',Georgia,serif;font-weight:900;font-size:22px;color:var(--cream);line-height:1;}
-  .seal .label{font-size:9.5px;letter-spacing:.04em;color:var(--gold-light);margin-top:5px;text-transform:uppercase;}
-  .drinks-cta{display:inline-block;align-self:center;margin-top:30px;padding:13px 24px;border-radius:26px;border:1px solid var(--gold-light);color:var(--cream);background:rgba(140,29,43,.55);text-decoration:none;font-size:14px;font-weight:600;}
-  .hero-ig{display:inline-block;align-self:center;margin-top:14px;padding:9px 18px;color:var(--gold-light);text-decoration:none;font-size:14px;}
-  .hero-ig b{color:var(--cream);}
-  .hero.hidden{display:none;}
+  /* ---------- Encabezado (igual en comida y tragos) ---------- */
+  .head{position:sticky;top:0;z-index:20}
+  .topbar{background:var(--ink);color:#F3EBDD;padding:9px 14px;display:flex;align-items:center;justify-content:space-between;gap:10px;border-bottom:2px solid var(--gold)}
+  .brand{font-family:'Noto Serif SC','Noto Serif',Georgia,serif;font-weight:700;font-size:18px;white-space:nowrap;color:#F3EBDD;text-decoration:none;background:none;border:none;cursor:pointer;padding:6px 0}
+  .brand small{font-size:13px;color:var(--gold-light);font-weight:700;margin-left:4px}
+  .lang-switch{display:flex;gap:6px}
+  .lang-switch button,.theme-btn{width:36px;height:36px;border-radius:50%;border:1px solid rgba(226,201,138,.55);background:transparent;color:var(--gold-light);font-weight:700;font-size:12px;cursor:pointer;flex:none}
+  .lang-switch button.current{background:#9E2233;border-color:var(--gold-light);color:#fff}
+  .theme-btn{font-size:16px;line-height:1;margin-left:4px}
+  @media (max-width:374px){.lang-switch{gap:4px}.lang-switch button,.theme-btn{width:32px;height:32px}.brand small{display:none}.topbar{padding:9px 10px}}
+  .cat-nav{display:flex;gap:8px;overflow-x:auto;padding:9px 14px;background:var(--bg);border-bottom:1px solid var(--edge);scrollbar-width:none;box-shadow:0 4px 10px -6px rgba(0,0,0,.25)}
+  .head::after{content:"";position:absolute;right:0;bottom:1px;width:30px;height:50px;background:linear-gradient(90deg,transparent,var(--bg));pointer-events:none}
+  .cat-nav::-webkit-scrollbar{display:none}
+  .cat-nav::after{content:"";flex:0 0 24px}
+  .cat-pill{flex:0 0 auto;padding:8px 14px;border-radius:20px;background:var(--card);border:1px solid var(--edge);font-size:13px;font-weight:600;color:var(--pill-t);white-space:nowrap;cursor:pointer}
+  .cat-pill.active{background:#9E2233;color:#fff;border-color:#9E2233}
 
-  /* ---------- Carta ---------- */
-  .menu-view{display:none;padding-bottom:calc(64px + env(safe-area-inset-bottom));}
-  .menu-view.active{display:block;}
-
-  .head{position:sticky;top:0;z-index:20;}
-  .topbar{background:var(--ink);color:var(--cream);padding:9px 14px;display:flex;align-items:center;justify-content:space-between;gap:10px;border-bottom:2px solid var(--gold);}
-  .brand{font-family:'Noto Serif SC','Noto Serif',Georgia,serif;font-weight:700;font-size:18px;white-space:nowrap;}
-  .brand small{font-size:13px;color:var(--gold-light);font-weight:700;margin-left:4px;}
-  .lang-switch{display:flex;gap:6px;}
-  .lang-switch button{width:36px;height:36px;border-radius:50%;border:1px solid rgba(216,196,138,.55);background:transparent;color:var(--gold-light);font-weight:700;font-size:12px;cursor:pointer;}
-  .lang-switch button.current{background:var(--red);border-color:var(--gold-light);color:#fff;}
-
-  .cat-nav{display:flex;gap:8px;overflow-x:auto;padding:9px 14px;background:var(--paper);border-bottom:1px solid rgba(140,29,43,.15);scrollbar-width:none;box-shadow:0 4px 10px -6px rgba(0,0,0,.25);}
-  .head::after{content:"";position:absolute;right:0;bottom:1px;width:30px;height:50px;background:linear-gradient(90deg,transparent,var(--paper));pointer-events:none}
-  .cat-nav::-webkit-scrollbar{display:none;}
-  .cat-nav::after{content:"";flex:0 0 24px;}
-  .cat-pill{flex:0 0 auto;padding:8px 14px;border-radius:20px;background:var(--cream);border:1px solid var(--gold);font-size:13px;font-weight:600;color:var(--red-dark);white-space:nowrap;cursor:pointer;}
-  .cat-pill.active{background:var(--red);color:#fff;border-color:var(--red);}
-
-  .tools{padding:14px 16px 4px;}
-  .search{position:relative;}
-  .search input{width:100%;padding:12px 42px 12px 40px;border-radius:24px;border:1px solid var(--gold);background:#fff;font-size:16px;font-family:inherit;color:var(--ink);-webkit-appearance:none;appearance:none;}
-  .search input:focus{outline:2px solid var(--red);outline-offset:1px;}
-  .search::before{content:"🔍";position:absolute;left:14px;top:50%;transform:translateY(-50%);font-size:14px;opacity:.7;}
-  .search .clear{position:absolute;right:6px;top:50%;transform:translateY(-50%);width:34px;height:34px;border-radius:50%;border:none;background:var(--cream);color:var(--red-dark);font-size:15px;cursor:pointer;display:none;}
-  .search.has .clear{display:block;}
-  .legend{display:flex;gap:14px;flex-wrap:wrap;font-size:12px;color:var(--mut);padding:10px 4px 0;}
-  .legend span{display:inline-flex;align-items:center;gap:5px;}
-
-  .category{padding:20px 16px 4px;scroll-margin-top:var(--head-h);}
-  .category h2{font-family:'Noto Serif SC','Noto Serif',Georgia,serif;font-weight:900;font-size:21px;color:var(--red);margin-bottom:2px;}
-  .category .cat-sub{font-size:12px;color:var(--jade);letter-spacing:.04em;margin-bottom:8px;text-transform:uppercase;font-weight:600;}
-  .dish{display:flex;gap:12px;padding:13px 0;border-bottom:1px dashed rgba(140,29,43,.22);align-items:flex-start;}
-  .dish:last-child{border-bottom:none;}
-  .dish-photo{flex:0 0 auto;width:68px;height:68px;border-radius:10px;overflow:hidden;border:1px solid var(--gold-light);background:var(--cream);padding:0;cursor:zoom-in;position:relative;}
-  .dish-photo img{width:100%;height:100%;object-fit:cover;display:block;}
-  .dish-photo::after{content:"⤢";position:absolute;right:4px;bottom:1px;font-size:11px;color:#fff;text-shadow:0 0 3px #000;}
-  .dish-body{flex:1;min-width:0;display:flex;justify-content:space-between;gap:10px;}
-  .dish-name{font-weight:700;font-size:15px;color:var(--ink);line-height:1.3;}
-  .dish-sub{font-size:11.5px;color:var(--jade);margin-bottom:2px;font-weight:700;text-transform:uppercase;letter-spacing:.03em;}
-  .dish-desc{font-size:13px;color:var(--mut);margin-top:3px;line-height:1.42;}
-  .dish-price{font-weight:700;color:var(--red-dark);font-size:15px;white-space:nowrap;}
-  .badge-star,.badge-veg{display:inline-block;font-size:10px;font-weight:700;padding:1px 7px;border-radius:9px;margin-left:5px;vertical-align:2px;}
-  .badge-star{background:var(--gold);color:var(--ink);}
-  .badge-veg{background:var(--jade);color:#fff;}
-  .no-results{padding:36px 20px;text-align:center;font-size:14px;color:var(--mut);}
-  .no-results button{display:block;margin:14px auto 0;padding:10px 20px;border-radius:22px;border:1px solid var(--red);background:transparent;color:var(--red);font-weight:600;font-size:14px;cursor:pointer;}
-
-  .story{margin:26px 16px 22px;padding:16px 18px;background:var(--cream);border-left:3px solid var(--red);border-radius:6px;font-size:13.5px;line-height:1.55;}
-  .story .story-title{font-family:'Noto Serif','Noto Serif SC',Georgia,serif;font-weight:700;font-style:italic;color:var(--red);font-size:15px;margin-bottom:5px;display:block;}
-
-  .foot{padding:26px 20px 30px;text-align:center;background:var(--ink);color:var(--cream);}
-  .contact{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:18px;}
-  .contact a{color:var(--cream);text-decoration:none;border:1px solid rgba(216,196,138,.45);border-radius:12px;padding:12px 8px;font-size:13.5px;font-weight:600;background:rgba(255,255,255,.04);}
-  .foot .addr{font-size:13px;line-height:1.7;color:rgba(239,231,216,.85);}
-  .foot .pay{font-size:12px;line-height:1.6;color:rgba(239,231,216,.7);margin-top:8px;}
-  .foot .note{font-size:11.5px;color:rgba(239,231,216,.6);margin-top:12px;line-height:1.5;}
+  .contact{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:16px}
+  .hours{font-size:12.5px;line-height:1.6;margin-top:6px}
 
   .ig{display:flex;align-items:center;gap:10px;text-decoration:none;border-radius:14px;padding:11px 14px;margin:12px 0 0;background:linear-gradient(100deg,#833ab4,#c13584 45%,#e1306c 70%,#f77737);color:#fff;font-weight:700;font-size:14px}
   .ig .ic{width:30px;height:30px;flex:none;border:2px solid #fff;border-radius:9px;position:relative}
@@ -113,48 +59,133 @@
   .ig .go{margin-left:auto;font-size:18px}
 
   /* ---------- Navegación inferior ---------- */
-  .bottom-nav{position:fixed;left:50%;transform:translateX(-50%);bottom:0;width:100%;max-width:480px;z-index:30;display:none;background:var(--ink);border-top:2px solid var(--gold);padding:7px 10px calc(7px + env(safe-area-inset-bottom));gap:8px;}
-  .menu-view.active ~ .bottom-nav{display:flex;}
-  .bottom-nav a{flex:1;text-align:center;padding:11px 4px;border-radius:12px;font-size:13.5px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-decoration:none;color:var(--gold-light);border:1px solid rgba(216,196,138,.3);}
-  .bottom-nav a.on{background:var(--red);color:#fff;border-color:var(--red);}
-  .bottom-nav #modeDrinks{flex:1.5}
-  @media (max-width:350px){.bottom-nav a{font-size:12px}}
-  .bottom-nav button{flex:0 0 42px;border-radius:12px;border:1px solid rgba(216,196,138,.3);background:transparent;color:var(--gold-light);font-size:18px;cursor:pointer}
+  .bottom-nav{position:fixed;left:50%;transform:translateX(-50%);bottom:0;width:100%;max-width:480px;z-index:30;display:flex;background:var(--ink);border-top:2px solid var(--gold);padding:7px 10px calc(7px + env(safe-area-inset-bottom));gap:8px}
+  .bottom-nav a{flex:1;text-align:center;padding:11px 4px;border-radius:12px;font-size:14px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-decoration:none;color:var(--gold-light);border:1px solid rgba(226,201,138,.3)}
+  .bottom-nav a.on{background:#9E2233;color:#fff;border-color:#9E2233}
+  .bottom-nav button{flex:0 0 42px;border-radius:12px;border:1px solid rgba(226,201,138,.3);background:transparent;color:var(--gold-light);font-size:18px;cursor:pointer}
+  @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+
+  .app{max-width:480px;margin:0 auto;background:var(--bg);min-height:100vh;min-height:100svh;position:relative;box-shadow:0 0 60px rgba(0,0,0,.5)}
+
+  /* ---------- Lobby: logo, idioma y elección de carta ---------- */
+  .hero{min-height:100vh;min-height:100svh;display:flex;flex-direction:column;justify-content:center;align-items:center;background:radial-gradient(circle at 50% 0%,var(--hero-a) 0%,var(--hero-b) 75%);color:var(--hero-t);padding:56px 22px 30px;text-align:center;position:relative;overflow:hidden}
+  .hero::before{content:"";position:absolute;inset:10px;border:1px solid var(--hero-edge);pointer-events:none}
+  .hero.hidden{display:none}
+  .hero .theme-btn{position:absolute;top:22px;right:22px;border-color:var(--hero-edge);color:var(--hero-t);width:40px;height:40px;font-size:18px}
+  .logo-card{background:#fff;border-radius:18px;padding:14px 20px;box-shadow:0 6px 22px rgba(0,0,0,.22);border:1px solid var(--hero-edge);width:min(250px,72%)}
+  .logo-card img{display:block;width:100%;height:auto}
+  .hero h1{font-family:'Noto Serif SC','Noto Serif',Georgia,serif;font-weight:900;font-size:40px;line-height:1.1}
+  .hero .sub{font-family:'Noto Serif SC','Noto Serif',Georgia,serif;font-weight:700;font-size:15px;color:var(--hero-acc);margin-top:14px}
+  .hero .since{font-size:13px;color:var(--hero-mut);margin-top:4px;line-height:1.5}
+  .hero .hint{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--hero-mut);margin:22px 0 8px}
+  .lang-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;width:100%;max-width:380px}
+  .lang-opt{padding:10px 2px;border-radius:14px;border:1.5px solid var(--hero-edge);background:transparent;color:var(--hero-t);cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:2px}
+  .lang-opt b{font-family:'Noto Serif SC','Noto Serif',Georgia,serif;font-size:18px;line-height:1.1}
+  .lang-opt span{font-size:10.5px;opacity:.85}
+  .lang-opt.on{background:#9E2233;border-color:#9E2233;color:#fff;box-shadow:0 4px 12px rgba(158,34,51,.4)}
+  .lang-opt:focus-visible,.choice:focus-visible{outline:3px solid var(--hero-acc);outline-offset:3px}
+  .hero .choose{font-size:15px;font-weight:700;margin:22px 0 10px}
+  .choices{display:grid;grid-template-columns:1fr 1fr;gap:10px;width:100%;max-width:380px}
+  .choice{border-radius:18px;padding:18px 10px 16px;text-decoration:none;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:4px;border:1.5px solid transparent;box-shadow:0 6px 16px rgba(0,0,0,.25);transition:transform .12s ease}
+  .choice:active{transform:scale(.97)}
+  .choice .em{font-size:30px;line-height:1.1}
+  .choice b{font-size:16.5px;line-height:1.2}
+  .choice small{font-size:11.5px;line-height:1.35;opacity:.88}
+  .choice .go{margin-top:6px;font-size:12px;font-weight:700;letter-spacing:.04em}
+  .choice.food{background:linear-gradient(155deg,#A3243A,#5E1420);color:#fff}
+  .choice.drinks{background:linear-gradient(155deg,#33271f,#14100e);color:#F3EBDD;border-color:#B8963E}
+  .choice.drinks .go{color:#E2C98A}
+  .hero-links{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-top:18px}
+  .hero-links a{padding:10px 14px;border-radius:22px;border:1px solid var(--hero-edge);color:var(--hero-t);text-decoration:none;font-size:13px;font-weight:600}
+  .hero .hours{color:var(--hero-mut);margin-top:14px}
+
+  /* ---------- Carta ---------- */
+  .menu-view{display:none;padding-bottom:calc(64px + env(safe-area-inset-bottom))}
+  .menu-view.active{display:block}
+  .bottom-nav{display:none}
+  .menu-view.active ~ .bottom-nav{display:flex}
+
+  .tools{padding:14px 16px 4px}
+  .search{position:relative}
+  .search input{width:100%;padding:12px 42px 12px 40px;border-radius:24px;border:1px solid var(--edge);background:var(--input);font-size:16px;font-family:inherit;color:var(--txt);-webkit-appearance:none;appearance:none}
+  .search input::placeholder{color:var(--mut)}
+  .search input:focus{outline:2px solid #9E2233;outline-offset:1px}
+  .search::before{content:"🔍";position:absolute;left:14px;top:50%;transform:translateY(-50%);font-size:14px;opacity:.7}
+  .search .clear{position:absolute;right:6px;top:50%;transform:translateY(-50%);width:34px;height:34px;border-radius:50%;border:none;background:var(--chip);color:var(--txt);font-size:15px;cursor:pointer;display:none}
+  .search.has .clear{display:block}
+  .legend{display:flex;gap:14px;flex-wrap:wrap;font-size:12px;color:var(--mut);padding:10px 4px 0}
+  .legend span{display:inline-flex;align-items:center;gap:5px}
+
+  .category{padding:20px 16px 4px;scroll-margin-top:var(--head-h)}
+  .category h2{font-family:'Noto Serif SC','Noto Serif',Georgia,serif;font-weight:900;font-size:21px;color:var(--head);margin-bottom:2px}
+  .category .cat-sub{font-size:12px;color:var(--sub);letter-spacing:.04em;margin-bottom:8px;text-transform:uppercase;font-weight:600}
+  .dish{display:flex;gap:12px;padding:13px 0;border-bottom:1px dashed var(--line);align-items:flex-start}
+  .dish:last-child{border-bottom:none}
+  .dish-photo{flex:0 0 auto;width:68px;height:68px;border-radius:10px;overflow:hidden;border:1px solid var(--edge);background:var(--chip);padding:0;cursor:zoom-in;position:relative}
+  .dish-photo img{width:100%;height:100%;object-fit:cover;display:block}
+  .dish-photo::after{content:"⤢";position:absolute;right:4px;bottom:1px;font-size:11px;color:#fff;text-shadow:0 0 3px #000}
+  .dish-body{flex:1;min-width:0;display:flex;justify-content:space-between;gap:10px}
+  .dish-name{font-weight:700;font-size:15px;color:var(--txt);line-height:1.3}
+  .dish-sub{font-size:11.5px;color:var(--sub);margin-bottom:2px;font-weight:700;text-transform:uppercase;letter-spacing:.03em}
+  .dish-desc{font-size:13px;color:var(--mut);margin-top:3px;line-height:1.42}
+  .dish-price{font-weight:700;color:var(--price);font-size:15px;white-space:nowrap}
+  .badge-star,.badge-veg{display:inline-block;font-size:10px;font-weight:700;padding:1px 7px;border-radius:9px;margin-left:5px;vertical-align:2px}
+  .badge-star{background:var(--gold);color:#1A1613}
+  .badge-veg{background:#2F5548;color:#fff}
+  .no-results{padding:36px 20px;text-align:center;font-size:14px;color:var(--mut)}
+  .no-results button{display:block;margin:14px auto 0;padding:10px 20px;border-radius:22px;border:1px solid var(--head);background:transparent;color:var(--head);font-weight:600;font-size:14px;cursor:pointer}
+
+  .story{margin:26px 16px 22px;padding:16px 18px;background:var(--card);border:1px solid var(--edge);border-left:3px solid #9E2233;border-radius:6px;font-size:13.5px;line-height:1.55}
+  .story .story-title{font-family:'Noto Serif','Noto Serif SC',Georgia,serif;font-weight:700;font-style:italic;color:var(--head);font-size:15px;margin-bottom:5px;display:block}
+
+  .foot{padding:26px 20px 30px;text-align:center;background:var(--ink);color:#EFE7D8}
+  .foot .contact a{color:#EFE7D8;text-decoration:none;border:1px solid rgba(226,201,138,.45);border-radius:12px;padding:12px 8px;font-size:13.5px;font-weight:600;background:rgba(255,255,255,.04)}
+  .foot .addr{font-size:13px;line-height:1.7;color:rgba(239,231,216,.9)}
+  .foot .hours{color:rgba(239,231,216,.8)}
+  .foot .pay{font-size:12px;line-height:1.6;color:rgba(239,231,216,.7);margin-top:8px}
+  .foot .note{font-size:11.5px;color:rgba(239,231,216,.6);margin-top:12px;line-height:1.5}
 
   /* ---------- Foto ampliada ---------- */
-  #lb{position:fixed;inset:0;background:rgba(0,0,0,.93);display:none;z-index:40;flex-direction:column;align-items:center;justify-content:center;gap:12px;padding:16px;}
-  #lb.on{display:flex;}
-  #lb img{max-height:68vh;max-width:90vw;border-radius:14px;}
-  #lb .cap{color:#fff;font-weight:700;font-size:17px;text-align:center;}
-  #lb .cap small{display:block;color:var(--gold-light);font-size:15px;margin-top:4px;}
-  #lb .x{position:absolute;top:14px;right:14px;width:44px;height:44px;border-radius:50%;border:1px solid rgba(255,255,255,.5);background:rgba(0,0,0,.5);color:#fff;font-size:20px;cursor:pointer;}
-  @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important;}}
+  #lb{position:fixed;inset:0;background:rgba(0,0,0,.93);display:none;z-index:40;flex-direction:column;align-items:center;justify-content:center;gap:12px;padding:16px}
+  #lb.on{display:flex}
+  #lb img{max-height:68vh;max-width:90vw;border-radius:14px}
+  #lb .cap{color:#fff;font-weight:700;font-size:17px;text-align:center}
+  #lb .cap small{display:block;color:#E2C98A;font-size:15px;margin-top:4px}
+  #lb .x{position:absolute;top:14px;right:14px;width:44px;height:44px;border-radius:50%;border:1px solid rgba(255,255,255,.5);background:rgba(0,0,0,.5);color:#fff;font-size:20px;cursor:pointer}
 </style>
 </head>
 <body>
 <div class="app">
 
   <section class="hero" id="hero">
-    <div class="eyebrow">Providencia · Santiago de Chile</div>
-    <h1>Bin&nbsp;Xiang</h1>
-    <div class="sub">滨湘 &nbsp;·&nbsp; Cocina china familiar</div>
-    <div class="since">23+ años en Antonio Varas 67<br>23+ years · 23+ anos · 23年传承</div>
-    <div class="hint">Elige tu idioma · Choose your language<br>Escolha seu idioma · 选择语言</div>
-    <div class="lang-grid">
-      <button class="seal" data-l="es" onclick="setLang('es')" aria-label="Español"><span class="glyph">ES</span><span class="label">Español</span></button>
-      <button class="seal" data-l="en" onclick="setLang('en')" aria-label="English"><span class="glyph">EN</span><span class="label">English</span></button>
-      <button class="seal" data-l="pt" onclick="setLang('pt')" aria-label="Português"><span class="glyph">PT</span><span class="label">Português</span></button>
-      <button class="seal" data-l="zh" onclick="setLang('zh')" aria-label="中文"><span class="glyph">中</span><span class="label">中文</span></button>
+    <button class="theme-btn" onclick="toggleTheme()" aria-label="Claro / oscuro"></button>
+    <div class="logo-card"><img src="logo.png" alt="Restaurant Bin-Xiang" width="618" height="292" onerror="this.parentNode.outerHTML='<h1>Bin&nbsp;Xiang</h1>'"></div>
+    <div class="sub">宾香酒家 · <span id="hTag">Cocina china familiar</span></div>
+    <div class="since" id="hSince">Más de 23 años en Antonio Varas 67, Providencia</div>
+    <div class="hint">Idioma · Language · Idioma · 语言</div>
+    <div class="lang-grid" id="langGrid">
+      <button class="lang-opt" data-l="es" onclick="pickLang('es')"><b>ES</b><span>Español</span></button>
+      <button class="lang-opt" data-l="en" onclick="pickLang('en')"><b>EN</b><span>English</span></button>
+      <button class="lang-opt" data-l="pt" onclick="pickLang('pt')"><b>PT</b><span>Português</span></button>
+      <button class="lang-opt" data-l="zh" onclick="pickLang('zh')"><b>中</b><span>中文</span></button>
     </div>
-    <a class="drinks-cta" href="tragos.html">🍹 Tragos &amp; Picoteo · Drinks · 酒水</a>
-    <a class="hero-ig" href="https://www.instagram.com/binxiang67/" target="_blank" rel="noopener">📸 Instagram <b>@binxiang67</b></a>
+    <div class="choose" id="hChoose">¿Qué quieres ver?</div>
+    <div class="choices">
+      <a class="choice food" id="goFood" href="index.html?lang=es" onclick="enterFood();return false"><span class="em">🥢</span><b id="hFood">Menú de comida</b><small id="hFoodSub"></small><span class="go" id="hGo1">Ver ›</span></a>
+      <a class="choice drinks" id="goDrinks" href="tragos.html"><span class="em">🍹</span><b id="hDrinks">Carta de tragos</b><small id="hDrinksSub"></small><span class="go" id="hGo2">Ver ›</span></a>
+    </div>
+    <div class="hero-links">
+      <a id="hReserve" href="https://wa.me/56997764557?text=Hola%2C%20quiero%20reservar%20una%20mesa%20en%20Bin%20Xiang" target="_blank" rel="noopener">💬 Reservar por WhatsApp</a>
+      <a href="https://www.instagram.com/binxiang67/" target="_blank" rel="noopener">📸 @binxiang67</a>
+    </div>
+    <div class="hours" id="hHours"></div>
   </section>
 
   <div class="menu-view" id="menuView">
     <div class="head" id="head">
       <div class="topbar">
-        <div class="brand">Bin Xiang <small>滨湘</small></div>
-        <div class="lang-switch" id="langSwitch"></div>
+        <button class="brand" onclick="goHome()" aria-label="Inicio">Bin Xiang <small>宾香</small></button>
+        <div class="lang-switch"><span id="langSwitch" style="display:contents"></span><button class="theme-btn" onclick="toggleTheme()" aria-label="Claro / oscuro"></button></div>
       </div>
       <nav class="cat-nav" id="catNav" aria-label="Categorías"></nav>
     </div>
@@ -174,12 +205,13 @@
 
     <footer class="foot">
       <div class="contact">
-        <a href="https://wa.me/56997764557" target="_blank" rel="noopener">💬 WhatsApp</a>
+        <a href="https://wa.me/56997764557?text=Hola%2C%20quiero%20reservar%20una%20mesa%20en%20Bin%20Xiang" target="_blank" rel="noopener" id="resBtn">💬 Reservar</a>
         <a href="tel:+56997764557" id="callBtn">📞 +56 9 9776 4557</a>
         <a href="https://www.instagram.com/binxiang67/" target="_blank" rel="noopener">📸 @binxiang67</a>
         <a href="https://www.google.com/maps/search/?api=1&query=Bin+Xiang+Antonio+Varas+67+Providencia" target="_blank" rel="noopener" id="mapBtn">📍 Cómo llegar</a>
       </div>
-      <div class="addr">Antonio Varas 67, Providencia, Santiago</div>
+      <div class="addr">Antonio Varas 67, Providencia, Santiago · ☎ 22 823 0191</div>
+      <div class="hours" id="fHours"></div>
       <div class="pay">Sodexo · Edenred · Pluxee · Junaeb · Amipass · Débito / Crédito</div>
       <div class="note" id="allergyNote"></div>
     </footer>
@@ -188,7 +220,7 @@
   <nav class="bottom-nav" aria-label="Carta">
     <a class="on" id="modeFood" href="#" onclick="window.scrollTo({top:0,behavior:'smooth'});return false"></a>
     <a href="tragos.html" id="modeDrinks"></a>
-  <button aria-label="Subir" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+    <button aria-label="Subir" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
   </nav>
 </div>
 
@@ -201,22 +233,67 @@
 <script src="menu-data.js"></script>
 <script>
 const TXT={
-  es:{food:"🥢 Comida",drinks:"🍹 Tragos & Picoteo",veg:"Vegetariano",map:"📍 Cómo llegar",none:"No encontramos platos con",clear:"Ver toda la carta"},
-  en:{food:"🥢 Food",drinks:"🍹 Drinks & Bites",veg:"Vegetarian",map:"📍 Directions",none:"No dishes found for",clear:"Show full menu"},
-  pt:{food:"🥢 Comida",drinks:"🍹 Drinks & Petiscos",veg:"Vegetariano",map:"📍 Como chegar",none:"Nenhum prato encontrado para",clear:"Ver cardápio completo"},
-  zh:{food:"🥢 菜单",drinks:"🍹 酒水与小吃",veg:"素食",map:"📍 导航到店",none:"未找到相关菜品：",clear:"查看全部菜单"}
+  es:{food:"🥢 Comida",drinks:"🍹 Tragos",veg:"Vegetariano",map:"📍 Cómo llegar",res:"💬 Reservar",none:"No encontramos platos con",clear:"Ver toda la carta",
+      tag:"Cocina china familiar",since:"Más de 23 años en Antonio Varas 67, Providencia",choose:"¿Qué quieres ver?",hFood:"Menú de comida",hFoodSub:"Platos, colaciones y menús para compartir",hDrinks:"Carta de tragos",hDrinksSub:"Cócteles, jarras, cervezas y vinos",go:"Ver ›",reserve:"💬 Reservar por WhatsApp",hours:"Lun a Sáb 12:00–22:00 · Dom y festivos 12:00–21:00",light:"Modo claro",dark:"Modo oscuro"},
+  en:{food:"🥢 Food",drinks:"🍹 Drinks",veg:"Vegetarian",map:"📍 Directions",res:"💬 Book a table",none:"No dishes found for",clear:"Show full menu",
+      tag:"Family Chinese cooking",since:"23+ years at Antonio Varas 67, Providencia",choose:"What would you like to see?",hFood:"Food menu",hFoodSub:"Dishes, lunch combos and sharing menus",hDrinks:"Drinks menu",hDrinksSub:"Cocktails, pitchers, beer and wine",go:"Open ›",reserve:"💬 Book via WhatsApp",hours:"Mon–Sat 12:00–22:00 · Sun & holidays 12:00–21:00",light:"Light mode",dark:"Dark mode"},
+  pt:{food:"🥢 Comida",drinks:"🍹 Drinks",veg:"Vegetariano",map:"📍 Como chegar",res:"💬 Reservar",none:"Nenhum prato encontrado para",clear:"Ver cardápio completo",
+      tag:"Cozinha chinesa familiar",since:"Mais de 23 anos na Antonio Varas 67, Providencia",choose:"O que você quer ver?",hFood:"Cardápio de comida",hFoodSub:"Pratos, combos e menus para compartilhar",hDrinks:"Carta de drinks",hDrinksSub:"Coquetéis, jarras, cervejas e vinhos",go:"Ver ›",reserve:"💬 Reservar pelo WhatsApp",hours:"Seg a Sáb 12:00–22:00 · Dom e feriados 12:00–21:00",light:"Modo claro",dark:"Modo escuro"},
+  zh:{food:"🥢 菜单",drinks:"🍹 酒水",veg:"素食",map:"📍 导航到店",res:"💬 订位",none:"未找到相关菜品：",clear:"查看全部菜单",
+      tag:"家庭中餐馆",since:"在 Antonio Varas 67 号经营23年以上",choose:"您想看什么？",hFood:"菜单",hFoodSub:"菜品、套餐与多人分享餐",hDrinks:"酒水单",hDrinksSub:"鸡尾酒、整壶、啤酒和葡萄酒",go:"查看 ›",reserve:"💬 WhatsApp 订位",hours:"周一至周六 12:00–22:00 · 周日及节假日 12:00–21:00",light:"浅色模式",dark:"深色模式"}
 };
 const $=id=>document.getElementById(id);
-const IGTXT={"es": "Síguenos en Instagram", "en": "Follow us on Instagram", "pt": "Siga-nos no Instagram", "zh": "关注我们的 Instagram"};
+const IGTXT={es:"Síguenos en Instagram",en:"Follow us on Instagram",pt:"Siga-nos no Instagram",zh:"关注我们的 Instagram"};
 function igBanner(l){return `<a class="ig" href="https://www.instagram.com/binxiang67/" target="_blank" rel="noopener"><span class="ic"></span><span>@binxiang67<small>${IGTXT[l]||IGTXT.es}</small></span><span class="go">›</span></a>`}
 
 const norm=s=>String(s||"").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"");
 const esc=s=>String(s==null?"":s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
-const store={get(){try{return localStorage.getItem("bx_lang")}catch(e){return null}},set(v){try{localStorage.setItem("bx_lang",v)}catch(e){}}};
-let currentLang=null, spyLock=0;
+const store={get(k){try{return localStorage.getItem(k)}catch(e){return null}},set(k,v){try{localStorage.setItem(k,v)}catch(e){}}};
+let currentLang=null, lobbyLang="es", spyLock=0;
 
+/* ---------- Tema claro / oscuro (se comparte con tragos.html) ---------- */
+function paintTheme(){
+  const dark=document.documentElement.getAttribute("data-theme")==="dark", x=TXT[currentLang||lobbyLang]||TXT.es;
+  document.querySelectorAll(".theme-btn").forEach(b=>{b.textContent=dark?"☀️":"🌙";b.setAttribute("aria-label",dark?x.light:x.dark);b.title=dark?x.light:x.dark});
+}
+function toggleTheme(){
+  const t=document.documentElement.getAttribute("data-theme")==="dark"?"light":"dark";
+  document.documentElement.setAttribute("data-theme",t); store.set("bx_theme",t); paintTheme();
+}
+
+/* ---------- Lobby ---------- */
+function renderLobby(){
+  const x=TXT[lobbyLang];
+  document.documentElement.lang=lobbyLang==="zh"?"zh-Hans":lobbyLang;
+  document.querySelectorAll(".lang-opt").forEach(b=>{const on=b.dataset.l===lobbyLang;b.classList.toggle("on",on);b.setAttribute("aria-pressed",on)});
+  $("hTag").textContent=x.tag; $("hSince").textContent=x.since; $("hChoose").textContent=x.choose;
+  $("hFood").textContent=x.hFood; $("hFoodSub").textContent=x.hFoodSub; $("hDrinks").textContent=x.hDrinks; $("hDrinksSub").textContent=x.hDrinksSub;
+  $("hGo1").textContent=x.go; $("hGo2").textContent=x.go; $("hReserve").textContent=x.reserve; $("hHours").textContent="🕐 "+x.hours;
+  $("goFood").href="index.html?lang="+lobbyLang; $("goDrinks").href="tragos.html?lang="+lobbyLang;
+  paintTheme();
+}
+function pickLang(l){ lobbyLang=l; store.set("bx_lang",l); renderLobby(); }
+function showLobby(){
+  currentLang=null;
+  $("menuView").classList.remove("active"); $("hero").classList.remove("hidden");
+  renderLobby(); window.scrollTo(0,0);
+}
+function enterFood(){
+  setLang(lobbyLang); window.scrollTo(0,0);
+  try{history.pushState({v:"food"},"","?lang="+lobbyLang)}catch(e){}
+}
+function goHome(){
+  showLobby();
+  try{history.pushState({v:"lobby"},"",location.pathname)}catch(e){}
+}
+window.addEventListener("popstate",()=>{
+  let q=null; try{q=new URLSearchParams(location.search).get("lang")}catch(e){}
+  if(q&&UI[q]) setLang(q); else showLobby();
+});
+
+/* ---------- Carta de comida ---------- */
 function setLang(lang){
-  currentLang=lang; store.set(lang);
+  currentLang=lobbyLang=lang; store.set("bx_lang",lang);
   document.documentElement.lang=lang==="zh"?"zh-Hans":lang;
   $("hero").classList.add("hidden");
   $("menuView").classList.add("active");
@@ -232,10 +309,11 @@ function render(){
   $("modeFood").textContent=x.food;
   $("modeDrinks").textContent=x.drinks;
   $("modeDrinks").href="tragos.html?lang="+currentLang;
-  $("mapBtn").textContent=x.map;
+  $("mapBtn").textContent=x.map; $("resBtn").textContent=x.res; $("fHours").textContent="🕐 "+x.hours;
   $("legend").innerHTML=`<span><i class="badge-star" style="margin:0;font-style:normal">★</i>${esc(t.starLabel)}</span><span><i class="badge-veg" style="margin:0;font-style:normal">V</i>${esc(x.veg)}</span>`;
   $("langSwitch").innerHTML=Object.keys(UI).map(l=>`<button class="${l===currentLang?"current":""}" onclick="setLang('${l}')" aria-label="${UI[l].code}" ${l===currentLang?'aria-current="true"':""}>${UI[l].flag}</button>`).join("");
   $("igTop").innerHTML=igBanner(currentLang);
+  paintTheme();
   renderList();
   measure();
 }
@@ -262,7 +340,7 @@ function renderList(){
   });
   $("catNav").innerHTML=navHtml.join("");
   $("catList").innerHTML=html.length?html.join(""):`<div class="no-results">${esc(TXT[L].none)} “${esc(raw)}”<button onclick="clearSearch()">${esc(TXT[L].clear)}</button></div>`;
-  spy();
+  lastSpy=""; spy();
 }
 function clearSearch(){ $("searchInput").value=""; renderList(); }
 
@@ -279,13 +357,14 @@ function spy(){
   const secs=document.querySelectorAll(".category"); if(!secs.length) return;
   const line=$("head").offsetHeight+24; let cur=secs[0];
   secs.forEach(s=>{ if(s.getBoundingClientRect().top<=line) cur=s; });
+  if(window.innerHeight+window.scrollY>=document.documentElement.scrollHeight-4) cur=secs[secs.length-1];
   const id=cur.id.slice(4);
   if(id!==lastSpy||!$("catNav").querySelector(".active")){ lastSpy=id; setActive(id); }
 }
 $("catNav").addEventListener("click",e=>{
   const p=e.target.closest(".cat-pill"); if(!p) return;
   const sec=$("cat-"+p.dataset.cat); if(!sec) return;
-  spyLock=Date.now()+900; lastSpy=p.dataset.cat; setActive(p.dataset.cat);
+  spyLock=Date.now()+1500; lastSpy=p.dataset.cat; setActive(p.dataset.cat);
   sec.scrollIntoView({behavior:"smooth",block:"start"});
 });
 let ticking=false;
@@ -309,21 +388,19 @@ $("catList").addEventListener("click",e=>{
 function closeLb(){ $("lb").classList.remove("on"); }
 document.addEventListener("keydown",e=>{ if(e.key==="Escape") closeLb(); });
 
-/* Inicio: ?lang=xx o idioma guardado abre directo la carta; primera visita muestra la portada */
+/* Inicio: index.html?lang=xx abre directo la carta de comida; sin parámetro muestra el lobby */
 (function(){
   if(typeof UI==="undefined"||typeof MENU==="undefined"){
-    $("hero").insertAdjacentHTML("beforeend",'<p style="margin-top:24px;color:#fff;font-size:14px">⚠️ No se encontró <b>menu-data.js</b>. Súbelo a la misma carpeta que index.html.</p>');
-    document.querySelectorAll(".seal").forEach(b=>b.disabled=true);
+    $("hero").insertAdjacentHTML("beforeend",'<p style="margin-top:24px;font-size:14px">⚠️ No se encontró <b>menu-data.js</b>. Súbelo a la misma carpeta que index.html.</p>');
+    document.querySelector(".choices").style.display="none";
+    paintTheme();
     return;
   }
   let q=null; try{ q=new URLSearchParams(location.search).get("lang"); }catch(e){}
-  const saved=store.get();
   if(q&&UI[q]) return setLang(q);
-  if(saved&&UI[saved]) return setLang(saved);
-  const nav=(navigator.language||"es").slice(0,2).toLowerCase();
-  const sug=document.querySelector('.seal[data-l="'+(UI[nav]?nav:"es")+'"]');
-  if(sug) sug.classList.add("suggested");
-  document.querySelector(".drinks-cta").href="tragos.html?lang="+(UI[nav]?nav:"es");
+  const saved=store.get("bx_lang"), nav=(navigator.language||"es").slice(0,2).toLowerCase();
+  lobbyLang=saved&&UI[saved]?saved:(UI[nav]?nav:"es");
+  renderLobby();
 })();
 </script>
 </body>

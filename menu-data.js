@@ -92,7 +92,7 @@ const MENU = [
 ]},
 
 { id:"pollo", name:{es:"Pollo",en:"Chicken",pt:"Frango",zh:"鸡肉"}, items:[
-  { star:true, p:"$12.990", n:{es:"Pollo Bin Xiang",en:"Pollo Bin Xiang",pt:"Frango Bin Xiang",zh:"滨湘鸡"}, d:{es:"Pollo salteado con algas chinas, champiñones y cebollín.",en:"Chicken stir-fried with Chinese seaweed, mushrooms and scallion.",pt:"Frango salteado com algas chinesas, cogumelos e cebolinha.",zh:"鸡肉配海藻、蘑菇、葱花炒制。"} },
+  { star:true, p:"$12.990", n:{es:"Pollo Bin Xiang",en:"Pollo Bin Xiang",pt:"Frango Bin Xiang",zh:"宾香鸡"}, d:{es:"Pollo salteado con algas chinas, champiñones y cebollín.",en:"Chicken stir-fried with Chinese seaweed, mushrooms and scallion.",pt:"Frango salteado com algas chinesas, cogumelos e cebolinha.",zh:"鸡肉配海藻、蘑菇、葱花炒制。"} },
   { p:"$14.900", n:{es:"Pollo con Camarón",en:"Chicken with Shrimp",pt:"Frango com Camarão",zh:"虾仁滑鸡"}, d:{es:"Pollo salteado con camarones y cebollín.",en:"Chicken stir-fried with shrimp and scallion.",pt:"Frango salteado com camarão e cebolinha.",zh:"鸡肉虾仁配葱花炒制。"} },
   { p:"$11.500", n:{es:"Pollo Mongoliano",en:"Mongolian Chicken",pt:"Frango Mongoliano",zh:"蒙古鸡"}, d:{es:"Pollo salteado con cebollín.",en:"Chicken stir-fried with scallion.",pt:"Frango salteado com cebolinha.",zh:"鸡肉配葱花炒制。"} },
   { p:"$11.500", n:{es:"Pollo Tausí",en:"Chicken Tausí (Black Bean)",pt:"Frango Tausí",zh:"豆豉鸡"}, d:{es:"Pollo salteado con tausí (porotos chinos) y cebollín.",en:"Chicken stir-fried with fermented black beans and scallion.",pt:"Frango salteado com tausí (feijão preto chinês) e cebolinha.",zh:"鸡肉配豆豉、葱花炒制。"} },
@@ -108,7 +108,7 @@ const MENU = [
 ]},
 
 { id:"carne", name:{es:"Carne",en:"Beef",pt:"Carne Bovina",zh:"牛肉"}, items:[
-  { star:true, p:"$14.500", n:{es:"Carne Bin Xiang",en:"Beef Bin Xiang",pt:"Carne Bin Xiang",zh:"滨湘牛肉"}, d:{es:"Carne salteada con algas chinas, champiñones y cebollín.",en:"Beef stir-fried with Chinese seaweed, mushrooms and scallion.",pt:"Carne salteada com algas chinesas, cogumelos e cebolinha.",zh:"牛肉配海藻、蘑菇、葱花炒制。"} },
+  { star:true, p:"$14.500", n:{es:"Carne Bin Xiang",en:"Beef Bin Xiang",pt:"Carne Bin Xiang",zh:"宾香牛肉"}, d:{es:"Carne salteada con algas chinas, champiñones y cebollín.",en:"Beef stir-fried with Chinese seaweed, mushrooms and scallion.",pt:"Carne salteada com algas chinesas, cogumelos e cebolinha.",zh:"牛肉配海藻、蘑菇、葱花炒制。"} },
   { p:"$12.200", n:{es:"Carne Mongoliana",en:"Mongolian Beef",pt:"Carne Mongoliana",zh:"蒙古牛肉"}, d:{es:"Carne salteada con cebollín.",en:"Beef stir-fried with scallion.",pt:"Carne salteada com cebolinha.",zh:"牛肉配葱花炒制。"} },
   { star:true, p:"$14.500", n:{es:"Carne Mongoliana Especial",en:"Special Mongolian Beef",pt:"Carne Mongoliana Especial",zh:"特色蒙古牛肉"}, d:{es:"Carne y pollo salteados al wok con cebollín fresco, champiñones y salsa de soya, un clásico lleno de sabor oriental.",en:"Beef and chicken wok-fried with fresh scallion, mushrooms and soy sauce — an oriental classic.",pt:"Carne e frango salteados no wok com cebolinha fresca, cogumelos e molho de soja, um clássico oriental.",zh:"牛肉鸡肉同炒，配新鲜葱花、蘑菇和酱油，东方风味经典之作。"} },
   { p:"$13.500", n:{es:"Carne Champiñón",en:"Beef with Mushrooms",pt:"Carne com Cogumelos",zh:"蘑菇牛肉"}, d:{es:"Carne salteada con champiñones y cebollín.",en:"Beef stir-fried with mushrooms and scallion.",pt:"Carne salteada com cogumelos e cebolinha.",zh:"牛肉配蘑菇、葱花炒制。"} },
@@ -119,7 +119,7 @@ const MENU = [
 ]},
 
 { id:"chancho", name:{es:"Chancho",en:"Pork",pt:"Porco",zh:"猪肉"}, items:[
-  { p:"$12.200", n:{es:"Chancho Bin Xiang",en:"Pork Bin Xiang",pt:"Porco Bin Xiang",zh:"滨湘猪肉"}, d:{es:"Chancho salteado con algas chinas, champiñones y cebollín.",en:"Pork stir-fried with Chinese seaweed, mushrooms and scallion.",pt:"Porco salteado com algas chinesas, cogumelos e cebolinha.",zh:"猪肉配海藻、蘑菇、葱花炒制。"} },
+  { p:"$12.200", n:{es:"Chancho Bin Xiang",en:"Pork Bin Xiang",pt:"Porco Bin Xiang",zh:"宾香猪肉"}, d:{es:"Chancho salteado con algas chinas, champiñones y cebollín.",en:"Pork stir-fried with Chinese seaweed, mushrooms and scallion.",pt:"Porco salteado com algas chinesas, cogumelos e cebolinha.",zh:"猪肉配海藻、蘑菇、葱花炒制。"} },
   { star:true, p:"$11.500", n:{es:"Costillar Cantonés",en:"Cantonese Ribs",pt:"Costelinha Cantonesa",zh:"广式排骨"}, d:{es:"Chancho arrebozado frito con salsa de tamarindo y piña.",en:"Battered fried pork with tamarind and pineapple sauce.",pt:"Porco empanado e frito com molho de tamarindo e abacaxi.",zh:"裹粉炸猪肉配罗望子菠萝酱。"} },
   { p:"$14.800", n:{es:"Chancho Chasiu",en:"Char Siu Pork",pt:"Porco Chasiu",zh:"叉烧"}, d:{es:"Chancho asado salteado con cebollín.",en:"Roasted pork stir-fried with scallion.",pt:"Porco assado salteado com cebolinha.",zh:"叉烧配葱花炒制。"} },
   { p:"$11.500", n:{es:"Chancho Mongoliano",en:"Mongolian Pork",pt:"Porco Mongoliano",zh:"蒙古猪肉"}, d:{es:"Chancho salteado con cebollín.",en:"Pork stir-fried with scallion.",pt:"Porco salteado com cebolinha.",zh:"猪肉配葱花炒制。"} },
@@ -131,7 +131,7 @@ const MENU = [
 
 { id:"mariscos", name:{es:"Mariscos y Pescados",en:"Seafood & Fish",pt:"Frutos do Mar e Peixes",zh:"海鲜和鱼类"}, items:[
   { p:"$11.500", n:{es:"Arrollado de Pescado",en:"Fish Roll",pt:"Rolinho de Peixe",zh:"鱼卷"}, d:{es:"Pasta de pescado envuelto en panqueque de huevo, cocida al vapor, bañada en salsa de soya y cebollín.",en:"Fish paste wrapped in egg crêpe, steamed and topped with soy sauce and scallion.",pt:"Pasta de peixe envolta em panqueca de ovo, cozida no vapor e coberta com molho de soja e cebolinha.",zh:"鱼蓉裹蛋皮蒸制，淋上酱油和葱花。"} },
-  { star:true, p:"$15.900", n:{es:"Camarón Bin Xiang",en:"Shrimp Bin Xiang",pt:"Camarão Bin Xiang",zh:"滨湘虾仁"}, d:{es:"Camarones salteados con champiñones, algas chinas y cebollín.",en:"Shrimp stir-fried with mushrooms, Chinese seaweed and scallion.",pt:"Camarões salteados com cogumelos, algas chinesas e cebolinha.",zh:"虾仁配蘑菇、海藻、葱花炒制。"} },
+  { star:true, p:"$15.900", n:{es:"Camarón Bin Xiang",en:"Shrimp Bin Xiang",pt:"Camarão Bin Xiang",zh:"宾香虾仁"}, d:{es:"Camarones salteados con champiñones, algas chinas y cebollín.",en:"Shrimp stir-fried with mushrooms, Chinese seaweed and scallion.",pt:"Camarões salteados com cogumelos, algas chinesas e cebolinha.",zh:"虾仁配蘑菇、海藻、葱花炒制。"} },
   { p:"$14.500", n:{es:"Camarón Fuyón",en:"Shrimp Egg Foo Young",pt:"Omelete de Camarão",zh:"虾仁煎蛋"}, d:{es:"Tortilla con camarones.",en:"Egg omelette with shrimp.",pt:"Omelete com camarão.",zh:"虾仁煎蛋。"} }
 ]},
 
