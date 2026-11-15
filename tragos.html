@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bin Xiang 滨湘 · Tragos & Picoteo · Drinks · 酒水</title>
+<meta name="description" content="Carta de tragos y picoteo de Bin Xiang: copas, jarras y Hora Dorada en Antonio Varas 67, Providencia. Español · English · Português · 中文.">
+<meta name="theme-color" content="#1A1613">
+<meta property="og:title" content="Bin Xiang 滨湘 · Tragos & Picoteo">
+<meta property="og:description" content="Copas, jarras y picoteo · Antonio Varas 67, Providencia · ES / EN / PT / 中文">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://tianzote.github.io/binxiang-carta/jarra-sangria.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='31' fill='%238C1D2B'/%3E%3Ctext x='32' y='44' font-size='34' text-anchor='middle' fill='%23EFE7D8' font-family='serif' font-weight='700'%3E滨%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@700;900&family=Noto+Serif:ital,wght@0,700;1,600&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#1A1613;--bg:#14100e;--card:#211a16;--line:#3d3028;--red:#9E2233;--gold:#B8963E;--gold-light:#E2C98A;--txt:#F3EBDD;--mut:#BBAE9F;--head-h:104px}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{background:var(--bg)}
+  body{font-family:'Noto Sans','Noto Sans SC',-apple-system,"Segoe UI",Roboto,"PingFang SC",sans-serif;color:var(--txt);-webkit-font-smoothing:antialiased;-webkit-tap-highlight-color:transparent;padding-bottom:calc(64px + env(safe-area-inset-bottom))}
+  button{font-family:inherit}
+  .app{max-width:480px;margin:0 auto;position:relative}
+
+  .head{position:sticky;top:0;z-index:20}
+  .topbar{background:var(--ink);color:var(--txt);padding:9px 14px;display:flex;align-items:center;justify-content:space-between;gap:10px;border-bottom:2px solid var(--gold)}
+  .brand{font-family:'Noto Serif SC','Noto Serif',Georgia,serif;font-weight:700;font-size:18px;white-space:nowrap}
+  .brand small{font-size:13px;color:var(--gold-light);font-weight:700;margin-left:4px}
+  .lang-switch{display:flex;gap:6px}
+  .lang-switch button{width:36px;height:36px;border-radius:50%;border:1px solid rgba(216,196,138,.55);background:transparent;color:var(--gold-light);font-weight:700;font-size:12px;cursor:pointer}
+  .lang-switch button.current{background:var(--red);border-color:var(--gold-light);color:#fff}
+  .cat-nav{display:flex;gap:8px;overflow-x:auto;padding:9px 14px;background:var(--bg);border-bottom:1px solid var(--line);scrollbar-width:none;}
+  .head::after{content:"";position:absolute;right:0;bottom:1px;width:30px;height:50px;background:linear-gradient(90deg,transparent,var(--bg));pointer-events:none}
+  .cat-nav::-webkit-scrollbar{display:none}
+  .cat-nav::after{content:"";flex:0 0 24px}
+  .cat-pill{flex:0 0 auto;padding:8px 14px;border-radius:20px;background:var(--card);border:1px solid var(--line);font-size:13px;font-weight:600;color:var(--txt);white-space:nowrap;cursor:pointer}
+  .cat-pill.active{background:var(--red);color:#fff;border-color:var(--red)}
+
+  main{padding:0 14px}
+  .hora{margin-top:14px;background:linear-gradient(100deg,#3b2a0c,#5a3f10);border:1px solid #7a5a1c;color:#F6DFA4;border-radius:14px;padding:12px 14px;display:flex;gap:10px;align-items:flex-start}
+  .hora .ico{font-size:22px;line-height:1.1}
+  .hora b{display:block;font-size:15px;color:#fff}
+  .hora span{font-size:13px;line-height:1.4}
+  .legend{display:flex;gap:8px;flex-wrap:wrap;font-size:12px;color:var(--mut);padding:10px 2px 0}
+
+  section{scroll-margin-top:var(--head-h)}
+  h2{font-family:'Noto Serif SC','Noto Serif',Georgia,serif;color:var(--gold-light);font-size:21px;font-weight:900;margin:24px 2px 10px}
+  h2 small{display:block;font-family:'Noto Sans SC',sans-serif;font-size:12.5px;color:var(--mut);font-weight:400;margin-top:1px}
+  .item{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 14px;min-height:64px;margin-bottom:8px;display:flex;gap:12px;align-items:center}
+  .thumb{flex:none;width:72px;height:72px;border-radius:10px;background:radial-gradient(circle at 50% 40%,#3a2a20,#1a1310);overflow:hidden;display:flex;align-items:center;justify-content:center;border:none;padding:0}
+  .thumb svg{width:62px;height:62px}
+  .thumb img{width:100%;height:100%;object-fit:cover;display:block}
+  button.thumb{cursor:zoom-in;position:relative}
+  button.thumb::after{content:"⤢";position:absolute;right:4px;bottom:1px;font-size:11px;color:#fff;text-shadow:0 0 3px #000}
+  .body{flex:1;min-width:0}
+  .row{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}
+  .name{font-weight:700;font-size:15.5px;line-height:1.3}
+  .zh{color:var(--mut);font-size:12.5px;margin-top:1px}
+  .desc{color:var(--mut);font-size:13px;margin-top:3px;line-height:1.4}
+  .price{font-weight:700;font-size:16px;color:var(--gold-light);white-space:nowrap}
+  .prices{display:flex;flex-wrap:wrap;gap:6px;margin-top:9px}
+  .pr{font-size:12px;border-radius:9px;padding:5px 9px;background:#2b211c;border:1px solid var(--line);color:var(--mut);display:flex;flex-direction:column;line-height:1.25;min-width:68px}
+  .pr b{font-size:15px;color:var(--txt)}
+  .pr.h{border-color:#7a5a1c;background:#33260c;color:#E8C877}
+  .pr.h b{color:#FBE7B0}
+
+  footer{text-align:center;margin-top:26px;padding:24px 14px 10px;border-top:1px solid var(--line)}
+  .contact{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:16px}
+  .contact a{color:var(--txt);text-decoration:none;border:1px solid rgba(216,196,138,.45);border-radius:12px;padding:12px 8px;font-size:13.5px;font-weight:600;background:rgba(255,255,255,.04)}
+  footer .addr{font-size:13px;color:rgba(243,235,221,.85);line-height:1.6}
+  footer .note{font-size:11.5px;color:var(--mut);margin-top:8px;line-height:1.5}
+
+  .ig{display:flex;align-items:center;gap:10px;text-decoration:none;border-radius:14px;padding:11px 14px;margin:12px 0 0;background:linear-gradient(100deg,#833ab4,#c13584 45%,#e1306c 70%,#f77737);color:#fff;font-weight:700;font-size:14px}
+  .ig .ic{width:30px;height:30px;flex:none;border:2px solid #fff;border-radius:9px;position:relative}
+  .ig .ic::before{content:"";position:absolute;inset:6px;border:2px solid #fff;border-radius:50%}
+  .ig .ic::after{content:"";position:absolute;top:3px;right:3px;width:4px;height:4px;background:#fff;border-radius:50%}
+  .ig small{display:block;font-weight:500;font-size:12px;opacity:.92}
+  .ig .go{margin-left:auto;font-size:18px}
+  .bottom-nav{position:fixed;left:50%;transform:translateX(-50%);bottom:0;width:100%;max-width:480px;z-index:30;display:flex;background:var(--ink);border-top:2px solid var(--gold);padding:7px 10px calc(7px + env(safe-area-inset-bottom));gap:8px}
+  .bottom-nav a{flex:1;text-align:center;padding:11px 4px;border-radius:12px;font-size:13.5px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-decoration:none;color:var(--gold-light);border:1px solid rgba(216,196,138,.3)}
+  .bottom-nav a.on{background:var(--red);color:#fff;border-color:var(--red)}
+  .bottom-nav #tabDrinks{flex:1.5}
+  @media (max-width:350px){.bottom-nav a{font-size:12px}}
+  .bottom-nav button{flex:0 0 42px;border-radius:12px;border:1px solid rgba(216,196,138,.3);background:transparent;color:var(--gold-light);font-size:18px;cursor:pointer}
+
+  #lb{position:fixed;inset:0;background:rgba(0,0,0,.93);display:none;z-index:40;flex-direction:column;align-items:center;justify-content:center;gap:12px;padding:16px}
+  #lb.on{display:flex}
+  #lb .imgs{display:flex;gap:10px;overflow-x:auto;max-width:100%;scroll-snap-type:x mandatory}
+  #lb img{max-height:66vh;max-width:86vw;border-radius:14px;scroll-snap-align:center;flex:none}
+  #lb .cap{color:#fff;font-weight:700;font-size:17px;text-align:center}
+  #lb .hint{color:var(--gold-light);font-size:13px}
+  #lb .x{position:absolute;top:14px;right:14px;width:44px;height:44px;border-radius:50%;border:1px solid rgba(255,255,255,.5);background:rgba(0,0,0,.5);color:#fff;font-size:20px;cursor:pointer}
+  @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="app">
+  <div class="head" id="head">
+    <div class="topbar">
+      <div class="brand">Bin Xiang <small>滨湘</small></div>
+      <div class="lang-switch" id="langs"></div>
+    </div>
+    <nav class="cat-nav" id="chips" aria-label="Categorías"></nav>
+  </div>
+  <main>
+    <div class="hora" id="hora"></div>
+    <div id="igTop"></div>
+    <div id="menu"></div>
+  </main>
+  <footer id="foot"></footer>
+</div>
+<nav class="bottom-nav" aria-label="Carta">
+  <a href="index.html" id="tabFood"></a>
+  <a href="#" class="on" id="tabDrinks" onclick="window.scrollTo({top:0,behavior:'smooth'});return false"></a>
+  <button aria-label="Subir" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+</nav>
+<div id="lb" role="dialog" aria-modal="true" onclick="closeLb()"><button class="x" aria-label="Cerrar">✕</button><div class="imgs" id="lbImgs"></div><div class="cap" id="lbCap"></div><div class="hint" id="lbHint"></div></div>
+
+<script src="tragos-data.js"></script>
+<script>
+const UI={
+  es:{food:"🥢 Comida",drinks:"🍹 Tragos & Picoteo",copa:"Copa",happy:"✨ 2 por",jarra:"Jarra 1,5 L",jarra1:"Jarra 1 L",botella:"Botella",map:"📍 Cómo llegar",foot:"Venta de alcohol solo a mayores de 18 años. Precios sujetos a cambio sin previo aviso. Imágenes referenciales."},
+  en:{food:"🥢 Food",drinks:"🍹 Drinks & Bites",copa:"Glass",happy:"✨ 2 for",jarra:"Pitcher 1.5 L",jarra1:"Pitcher 1 L",botella:"Bottle",map:"📍 Directions",foot:"Alcohol sold to adults 18+ only. Prices subject to change without notice. Photos for reference only."},
+  pt:{food:"🥢 Comida",drinks:"🍹 Drinks & Petiscos",copa:"Taça",happy:"✨ 2 por",jarra:"Jarra 1,5 L",jarra1:"Jarra 1 L",botella:"Garrafa",map:"📍 Como chegar",foot:"Venda de álcool apenas para maiores de 18 anos. Preços sujeitos a alteração sem aviso prévio. Imagens ilustrativas."},
+  zh:{food:"🥢 菜单",drinks:"🍹 酒水与小吃",copa:"单杯",happy:"✨ 两杯",jarra:"一壶 1.5升",jarra1:"一壶 1升",botella:"整瓶",map:"📍 导航到店",foot:"仅向18岁以上成人售酒。价格如有变动，恕不另行通知。图片仅供参考。"}
+};
+const LANGS=[["es","ES"],["en","EN"],["pt","PT"],["zh","中"]];
+const $=id=>document.getElementById(id);
+const IGTXT={"es": "Síguenos en Instagram", "en": "Follow us on Instagram", "pt": "Siga-nos no Instagram", "zh": "关注我们的 Instagram"};
+function igBanner(l){return `<a class="ig" href="https://www.instagram.com/binxiang67/" target="_blank" rel="noopener"><span class="ic"></span><span>@binxiang67<small>${IGTXT[l]||IGTXT.es}</small></span><span class="go">›</span></a>`}
+
+const esc=s=>String(s==null?"":s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+/* Ilustraciones SVG (reemplazables por fotos reales: agrega foto:"archivo.jpg" al item) */
+function garnish(g,x,y){
+  switch(g){
+    case "mint": return `<path d="M${x-4} ${y}c-6-8-2-14 6-14c0 8-2 12-6 14z" fill="#3fa34d"/><path d="M${x+2} ${y+2}c4-9 10-10 16-6c-4 6-9 8-16 6z" fill="#5cc26a"/>`;
+    case "lime": return `<circle cx="${x+10}" cy="${y}" r="9" fill="#9bd34a" stroke="#5c8f1f" stroke-width="2"/><path d="M${x+10} ${y-9}v18M${x+1} ${y}h18" stroke="#e8f7c8" stroke-width="1.2"/>`;
+    case "orange": return `<circle cx="${x+10}" cy="${y}" r="9" fill="#ffa53a" stroke="#d26b00" stroke-width="2"/><path d="M${x+10} ${y-9}v18M${x+1} ${y}h18" stroke="#ffe0b0" stroke-width="1.2"/>`;
+    case "foam": return "";
+    case "scoop": return `<circle cx="${x}" cy="${y+2}" r="11" fill="#fff4cf"/>`;
+    case "dragon": return `<circle cx="${x+10}" cy="${y}" r="9" fill="#e83e8c"/><circle cx="${x+7}" cy="${y-2}" r="1.3" fill="#222"/><circle cx="${x+12}" cy="${y+2}" r="1.3" fill="#222"/><circle cx="${x+9}" cy="${y+4}" r="1.3" fill="#222"/>`;
+    case "lychee": return `<circle cx="${x+8}" cy="${y}" r="8" fill="#fbeef0" stroke="#d98a9a" stroke-width="2"/>`;
+    default: return "";
+  }
+}
+function food(g,c){
+  const items={
+    wonton:()=>[0,1,2,3].map(i=>`<path d="M${30+i*14} 70l8-14l8 14q-8 6-16 0z" fill="${c}" stroke="#9a5a14" stroke-width="1.5"/>`).join(""),
+    roll:()=>[0,1,2].map(i=>`<rect x="${28+i*16}" y="56" width="12" height="20" rx="5" fill="${c}" stroke="#9a5a14" stroke-width="1.5"/>`).join(""),
+    wing:()=>[0,1,2].map(i=>`<ellipse cx="${38+i*14}" cy="66" rx="8" ry="11" fill="${c}" stroke="#6d3a0c" stroke-width="1.5"/>`).join(""),
+    fries:()=>[0,1,2,3,4,5].map(i=>`<rect x="${30+i*7}" y="${52+(i%3)*4}" width="5" height="22" rx="2" fill="${c}" transform="rotate(${(i-2)*6} ${32+i*7} 70)"/>`).join("")+`<circle cx="48" cy="58" r="3" fill="#c0392b"/><circle cx="58" cy="62" r="2.5" fill="#3fa34d"/>`,
+    chips:()=>[0,1,2,3].map(i=>`<path d="M${28+i*12} 72l10-18l8 18z" fill="${c}" stroke="#9a5a14" stroke-width="1.5"/>`).join(""),
+    pancake:()=>`<circle cx="50" cy="64" r="20" fill="${c}" stroke="#9a5a14" stroke-width="2"/><path d="M50 44v40M30 64h40M36 50l28 28M64 50l-28 28" stroke="#b8862f" stroke-width="1.2"/><circle cx="44" cy="60" r="2" fill="#3fa34d"/><circle cx="56" cy="68" r="2" fill="#3fa34d"/>`,
+    shrimp:()=>[0,1,2].map(i=>`<path d="M${30+i*14} 72q2-18 14-14q-6 2-6 10q0 6-8 4z" fill="${c}" stroke="#c0661e" stroke-width="1.5"/>`).join(""),
+    mix:()=>`<path d="M26 66l8-12l8 12z" fill="#e0a24a"/><rect x="46" y="56" width="10" height="16" rx="4" fill="#d48a2c"/><ellipse cx="66" cy="64" rx="7" ry="9" fill="#b5651d"/>`
+  };
+  return (items[g]||items.mix)();
+}
+function drawIcon(img){
+  if(!img) return "";
+  const {t,c,g}=img; let s="";
+  const glassStroke=`stroke="#d9cfc7" stroke-width="2.5" fill="none"`;
+  if(t==="high"){ s=`<rect x="32" y="30" width="36" height="56" rx="4" fill="${c}" opacity=".9"/><rect x="30" y="22" width="40" height="66" rx="5" ${glassStroke}/><rect x="38" y="44" width="10" height="10" rx="2" fill="#fff" opacity=".35"/><rect x="50" y="56" width="10" height="10" rx="2" fill="#fff" opacity=".3"/><line x1="58" y1="8" x2="52" y2="40" stroke="#c8102e" stroke-width="3"/>`+garnish(g,62,28); }
+  else if(t==="coupe"){ s=`<path d="M24 34h52q-4 26-26 26q-22 0-26-26z" fill="${c}"/><path d="M24 34h52" stroke="#fff" stroke-width="6" opacity=".9"/><path d="M22 30h56q-2 32-28 32q-26 0-28-32z" ${glassStroke}/><line x1="50" y1="62" x2="50" y2="84" stroke="#d9cfc7" stroke-width="2.5"/><line x1="36" y1="86" x2="64" y2="86" stroke="#d9cfc7" stroke-width="3"/>`; }
+  else if(t==="wine"){ s=`<path d="M30 40q0 24 20 24q20 0 20-24z" fill="${c}"/><path d="M28 22h44q2 42-22 42q-24 0-22-42z" ${glassStroke}/><line x1="50" y1="64" x2="50" y2="84" stroke="#d9cfc7" stroke-width="2.5"/><line x1="36" y1="86" x2="64" y2="86" stroke="#d9cfc7" stroke-width="3"/>`+garnish(g,62,26); }
+  else if(t==="bottle"){ s=`<path d="M42 10h16v14q8 8 8 18v44q0 4-4 4H38q-4 0-4-4V42q0-10 8-18z" fill="${c}"/><rect x="36" y="52" width="28" height="20" rx="2" fill="#f5ece4" opacity=".9"/><rect x="42" y="6" width="16" height="6" rx="2" fill="#c9a227"/>`; }
+  else if(t==="beer"){ s=`<rect x="30" y="30" width="38" height="56" rx="4" fill="${c}"/><rect x="30" y="24" width="38" height="10" rx="5" fill="#fff6e0"/><rect x="28" y="22" width="42" height="66" rx="5" ${glassStroke}/><path d="M70 38h8q6 0 6 8v16q0 8-6 8h-8" ${glassStroke}/>`+garnish(g,58,26); }
+  else if(t==="can"){ s=`<rect x="34" y="16" width="32" height="70" rx="6" fill="${c}"/><rect x="34" y="40" width="32" height="22" fill="#f5ece4"/><circle cx="50" cy="51" r="7" fill="#e8b44c"/><rect x="36" y="12" width="28" height="6" rx="3" fill="#bfbfbf"/>`; }
+  else if(t==="pitcher"){ s=`<path d="M26 26h40l-4 58q0 4-4 4H34q-4 0-4-4z" fill="${c}" opacity=".9"/><path d="M24 20h46l-4 66q0 4-4 4H32q-4 0-4-4z" ${glassStroke}/><path d="M68 32h8q6 0 6 8v20q0 8-6 8h-10" ${glassStroke}/><path d="M24 20l-6 6" stroke="#d9cfc7" stroke-width="2.5"/>`+garnish("mint",44,24); }
+  else if(t==="bucket"){ s=`<rect x="34" y="14" width="8" height="30" rx="3" fill="${c}"/><rect x="46" y="10" width="8" height="34" rx="3" fill="${c}"/><rect x="58" y="14" width="8" height="30" rx="3" fill="${c}"/><path d="M22 40h56l-6 46H28z" fill="#9aa7b0"/><path d="M22 40h56" stroke="#dfe6ea" stroke-width="4"/><circle cx="34" cy="44" r="4" fill="#e9f6ff"/><circle cx="62" cy="44" r="4" fill="#e9f6ff"/>`; }
+  else if(t==="plate"){ s=`<ellipse cx="50" cy="74" rx="40" ry="14" fill="#f5ece4"/><ellipse cx="50" cy="72" rx="32" ry="10" fill="#e9ddd2"/>`+food(g,c)+`<circle cx="80" cy="52" r="8" fill="#c8102e"/><circle cx="80" cy="52" r="5" fill="#e74c3c"/>`; }
+  else if(t==="board"){ s=`<rect x="10" y="62" width="80" height="18" rx="6" fill="#8b5a2b"/><rect x="10" y="60" width="80" height="6" rx="3" fill="#a87140"/>`+food("mix",c)+`<path d="M30 70l8-12l8 12z" fill="#e0a24a"/>`; }
+  return `<svg viewBox="0 0 100 100" aria-hidden="true">${s}</svg>`;
+}
+function thumb(it,ci,ii){
+  if(it.foto) return `<button class="thumb" onclick="openLb(${ci},${ii})" aria-label="${esc(it.n[lang])}"><img src="${it.foto}" alt="" loading="lazy"></button>`;
+  return ""; /* sin foto real: solo texto (los dibujos SVG quedan desactivados) */
+}
+const LBHINT={es:"Toca para cerrar",en:"Tap to close",pt:"Toque para fechar",zh:"点击关闭"};
+const LBMORE={es:"Desliza para ver la jarra →",en:"Swipe to see the pitcher →",pt:"Deslize para ver a jarra →",zh:"滑动查看整壶 →"};
+function openLb(ci,ii){
+  const it=window.TRAGOS.categorias[ci].items[ii]; if(!it.foto) return;
+  const fs=[it.foto].concat(it.foto2?[it.foto2]:[]);
+  $("lbImgs").innerHTML=fs.map(f=>`<img src="${f}" alt="">`).join("");
+  $("lbCap").textContent=it.n[lang];
+  $("lbHint").textContent=(fs.length>1?LBMORE[lang]+" · ":"")+LBHINT[lang];
+  $("lb").classList.add("on");
+}
+function closeLb(){$("lb").classList.remove("on")}
+document.addEventListener("keydown",e=>{if(e.key==="Escape")closeLb()});
+$("lbImgs").addEventListener("click",e=>{ if($("lbImgs").children.length>1) e.stopPropagation(); });
+
+let lang=(()=>{try{const q=new URLSearchParams(location.search).get("lang");if(q&&UI[q]){localStorage.setItem("bx_lang",q);return q}}catch(e){}try{const s=localStorage.getItem("bx_lang");if(s)return s}catch(e){}return (navigator.language||"es").slice(0,2).toLowerCase()})();
+if(!UI[lang])lang="es";
+
+function render(){
+  const u=UI[lang], D=window.TRAGOS;
+  document.documentElement.lang=lang==="zh"?"zh-Hans":lang;
+  $("langs").innerHTML=LANGS.map(([k,l])=>`<button class="${k===lang?'current':''}" onclick="setLang('${k}')" aria-label="${k.toUpperCase()}" ${k===lang?'aria-current="true"':''}>${l}</button>`).join("");
+  $("tabFood").textContent=u.food;
+  $("tabFood").href="index.html?lang="+lang;
+  $("tabDrinks").textContent=u.drinks;
+  const hp=String(D.horaDorada[lang]||"").split(" · ");
+  $("hora").innerHTML=`<div class="ico">✨</div><div><b>${esc(hp.slice(0,2).join(" · "))}</b><span>${esc(hp.slice(2).join(" · "))}</span></div>`;
+  $("igTop").innerHTML=igBanner(lang);
+  $("chips").innerHTML=D.categorias.map(c=>`<button class="cat-pill" data-cat="${c.id}">${esc(c.nombre[lang])}</button>`).join("");
+  $("menu").innerHTML=D.categorias.map((c,ci)=>`
+    <section id="${c.id}"><h2>${esc(c.nombre[lang])}${lang!=="zh"?`<small>${esc(c.nombre.zh)}</small>`:""}</h2>
+    ${c.items.map((it,ii)=>{
+      const multi=it.h||it.j||it.j1||it.b;
+      const pr=[];
+      if(multi){
+        if(it.p)pr.push(`<span class="pr">${u.copa}<b>${it.p}</b></span>`);
+        if(it.h)pr.push(`<span class="pr h">${u.happy}<b>${it.h}</b></span>`);
+        if(it.b)pr.push(`<span class="pr">${u.botella}<b>${it.b}</b></span>`);
+        if(it.j1)pr.push(`<span class="pr">${u.jarra1}<b>${it.j1}</b></span>`);
+        if(it.j)pr.push(`<span class="pr">${u.jarra}<b>${it.j}</b></span>`);
+      }
+      return `<div class="item">${thumb(it,ci,ii)}<div class="body">
+        <div class="row"><div>
+          <div class="name">${it.badge?it.badge+" ":""}${esc(it.n[lang])}</div>
+          ${lang!=="zh"&&it.n.zh&&it.n.zh!==it.n[lang]?`<div class="zh">${esc(it.n.zh)}</div>`:""}
+        </div>${!multi&&it.p?`<div class="price">${it.p}</div>`:""}</div>
+        ${it.d&&it.d[lang]?`<div class="desc">${esc(it.d[lang])}</div>`:""}
+        ${pr.length?`<div class="prices">${pr.join("")}</div>`:""}</div></div>`}).join("")}
+    </section>`).join("");
+  $("foot").innerHTML=`<div class="contact">
+      <a href="https://wa.me/56997764557" target="_blank" rel="noopener">💬 WhatsApp</a>
+      <a href="tel:+56997764557">📞 +56 9 9776 4557</a>
+      <a href="https://www.instagram.com/binxiang67/" target="_blank" rel="noopener">📸 @binxiang67</a>
+      <a href="https://www.google.com/maps/search/?api=1&query=Bin+Xiang+Antonio+Varas+67+Providencia" target="_blank" rel="noopener">${u.map}</a>
+    </div><div class="addr">Antonio Varas 67, Providencia, Santiago</div><div class="note">${u.foot}</div>`;
+  measure(); lastSpy=""; spy();
+}
+function setLang(k){lang=k;try{localStorage.setItem("bx_lang",k)}catch(e){}render()}
+
+/* Categorías: clic + resaltado automático al hacer scroll */
+let spyLock=0,lastSpy="";
+function measure(){document.documentElement.style.setProperty("--head-h",($("head").offsetHeight+6)+"px")}
+function setActive(id){
+  const nav=$("chips");let act=null;
+  nav.querySelectorAll(".cat-pill").forEach(p=>{const on=p.dataset.cat===id;p.classList.toggle("active",on);if(on)act=p});
+  if(act)nav.scrollTo({left:act.offsetLeft-(nav.clientWidth-act.offsetWidth)/2,behavior:"smooth"});
+}
+function spy(){
+  if(Date.now()<spyLock)return;
+  const secs=document.querySelectorAll("main section");if(!secs.length)return;
+  const line=$("head").offsetHeight+24;let cur=secs[0];
+  secs.forEach(s=>{if(s.getBoundingClientRect().top<=line)cur=s});
+  if(cur.id!==lastSpy){lastSpy=cur.id;setActive(cur.id)}
+}
+$("chips").addEventListener("click",e=>{
+  const p=e.target.closest(".cat-pill");if(!p)return;
+  const sec=$(p.dataset.cat);if(!sec)return;
+  spyLock=Date.now()+900;lastSpy=p.dataset.cat;setActive(p.dataset.cat);
+  sec.scrollIntoView({behavior:"smooth",block:"start"});
+});
+let ticking=false;
+window.addEventListener("scroll",()=>{if(ticking)return;ticking=true;requestAnimationFrame(()=>{ticking=false;spy()})},{passive:true});
+window.addEventListener("resize",measure);
+
+if(!window.TRAGOS||!window.TRAGOS.categorias){
+  $("hora").style.display="none";
+  $("menu").innerHTML='<div class="item" style="margin-top:16px"><div class="body"><div class="name">⚠️ No se encontró tragos-data.js</div><div class="desc">Sube <b>tragos-data.js</b> a la misma carpeta que <b>tragos.html</b> (en GitHub, al mismo nivel que index.html).</div></div></div>';
+}else{ render(); }
+</script>
+</body>
+</html>
